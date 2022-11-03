@@ -1,0 +1,21 @@
+---
+title: "Report on Covid-19 in the US"
+author: "Anne Clark"
+date: "2022.11.01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("../source/analysis.R")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Covid Data Summary
+In the United States, there have been **`r get_total_cases()`.** total Covid-19 cases, and **`r get_total_deaths()`** total deaths. 
+
+
+## Chart
+``` {r echo=FALSE}
+cases_plot
+```
+
